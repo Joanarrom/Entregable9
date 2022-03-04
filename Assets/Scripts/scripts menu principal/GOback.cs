@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GOback : MonoBehaviour
 {
-  
 
+    //Para ir a la escena siguiente
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);

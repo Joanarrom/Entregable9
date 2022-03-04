@@ -7,11 +7,11 @@ using TMPro;
 public class PersistentData : MonoBehaviour
 {
     public static PersistentData sharedInstance;
-    public string userName;
+    
 
     private void Awake()
     {
-        if (sharedInstance == null)
+        if (sharedInstance == null) //Guarda la posicion del player de la escena anterior en la escena nueva
         {
             sharedInstance = this;
             DontDestroyOnLoad(this);
